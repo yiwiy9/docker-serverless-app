@@ -1,9 +1,5 @@
 FROM node:16-alpine3.14
 
-# ビルド時に引数を受け取る
-ARG AWS_ACCESS_KEY_ID
-ARG AWS_SECRET_ACCESS_KEY
-
 WORKDIR /home/app
 
 # serverless framework のインストール
