@@ -1,11 +1,11 @@
 version: '3.8'
 services:
-  serverless:
+  backend:
     build:
-      context: ./docker/serverless
+      context: ./docker/backend
     volumes:
       - type: bind
-        source: ./src/serverless
+        source: ./src/backend
         target: /home/app
     environment:
         - TZ=Asia/Tokyo
