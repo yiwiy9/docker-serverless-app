@@ -8,7 +8,7 @@ serverless config credentials \
     --secret $AWS_SECRET_ACCESS_KEY &&
 
 # 依存パッケージのインストール
-cd api && npm install && pip install -r requirements.txt &&
+cd api && npm install && pip install -r requirements.txt && pip install -r requirements-dev.txt &&
 
 # exitしないためにベースイメージの`CMD`実行
 python
