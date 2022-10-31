@@ -1,4 +1,4 @@
-FROM arm64v8/node:16-buster-slim
+FROM node:16-buster-slim
 
 WORKDIR /home/app
 
